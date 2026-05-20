@@ -3,7 +3,9 @@
 A modern, responsive portfolio website showcasing my skills, projects, and experience.
 
 ## 🚀 Live Demo
-Open `index.html` in any browser to view the portfolio.
+🌐 **[View Portfolio](https://jayurana.github.io/portfolio-/)**
+
+`https://jayurana.github.io/portfolio-/`
 
 ## ✨ Features
 - **Hero Section** — Animated blob shapes with golden yellow theme

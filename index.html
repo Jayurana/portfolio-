@@ -54,7 +54,7 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-st
 .hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
 .hero-image-wrapper{position:relative;display:flex;justify-content:center;align-items:center}
 .hero-image-blob{position:absolute;width:380px;height:380px;background:var(--primary);border-radius:42% 58% 62% 38%/45% 55% 45% 55%;animation:blobFloat 10s ease-in-out infinite;opacity:.15}
-.hero-image{width:340px;height:340px;object-fit:cover;border-radius:42% 58% 62% 38%/45% 55% 45% 55%;position:relative;z-index:2;box-shadow:var(--shadow-lg);transition:var(--transition)}
+.hero-image{width:340px;height:340px;object-fit:cover;object-position:top;border-radius:42% 58% 62% 38%/45% 55% 45% 55%;position:relative;z-index:2;box-shadow:var(--shadow-lg);transition:var(--transition)}
 .hero-image:hover{border-radius:58% 42% 38% 62%/55% 45% 55% 45%}
 .hero-wave{position:absolute;bottom:-2px;left:0;right:0;z-index:3}
 .hero-wave svg{display:block;width:100%;height:80px}
@@ -69,7 +69,7 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-st
 .about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center}
 .about-image-wrapper{position:relative;display:flex;justify-content:center}
 .about-image-blob{position:absolute;width:320px;height:320px;background:var(--primary);border-radius:42% 58% 62% 38%/45% 55% 45% 55%;opacity:.15;animation:blobFloat 10s ease-in-out infinite}
-.about-image{width:300px;height:300px;object-fit:cover;border-radius:50%;position:relative;z-index:2;box-shadow:var(--shadow-md);border:5px solid var(--bg-white);transition:var(--transition)}
+.about-image{width:300px;height:300px;object-fit:cover;object-position:top;border-radius:50%;position:relative;z-index:2;box-shadow:var(--shadow-md);border:5px solid var(--bg-white);transition:var(--transition)}
 .about-image:hover{transform:scale(1.03);box-shadow:var(--shadow-lg)}
 .section-title{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;margin-bottom:20px;letter-spacing:-.02em}
 .section-title-center{text-align:center;margin-bottom:50px}
@@ -238,82 +238,9 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-st
             <h2 class="section-title section-title-center" data-animate="fade-up">
                 <span class="title-decoration">Projects</span>
             </h2>
-
-            <!-- Project 1 -->
+            <!-- Cricfantasy Project -->
             <div class="project-card" data-animate="fade-up">
                 <div class="project-card-inner">
-                    <div class="project-info">
-                        <h3 class="project-name">Web Application Dashboard</h3>
-                        <p class="project-description">
-                            A comprehensive analytics dashboard built with modern web technologies.
-                            Features real-time data visualization, interactive charts, and a responsive
-                            dark-themed interface for monitoring key business metrics.
-                        </p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <a href="#" class="btn btn-small">View Project</a>
-                    </div>
-                    <div class="project-image-wrapper">
-                        <img src="images/project1.png" alt="Web Application Dashboard" class="project-image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card project-card-reverse" data-animate="fade-up">
-                <div class="project-card-inner">
-                    <div class="project-image-wrapper">
-                        <img src="images/project2.png" alt="Mobile App Design" class="project-image">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-name">Mobile App Design</h3>
-                        <p class="project-description">
-                            A sleek and intuitive mobile application designed with a focus on user experience.
-                            Features clean UI patterns, smooth animations, and an engaging color palette
-                            for enhanced user interaction.
-                        </p>
-                        <div class="project-tech">
-                            <span>Figma</span>
-                            <span>React Native</span>
-                            <span>Firebase</span>
-                        </div>
-                        <a href="#" class="btn btn-small">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card" data-animate="fade-up">
-                <div class="project-card-inner">
-                    <div class="project-info">
-                        <h3 class="project-name">E-Commerce Platform</h3>
-                        <p class="project-description">
-                            A fully functional e-commerce website with product listings, shopping cart,
-                            secure checkout, and admin panel. Built with a focus on performance
-                            and seamless user shopping experience.
-                        </p>
-                        <div class="project-tech">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                        </div>
-                        <a href="#" class="btn btn-small">View Project</a>
-                    </div>
-                    <div class="project-image-wrapper">
-                        <img src="images/project3.png" alt="E-Commerce Platform" class="project-image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 - Cricfantasy -->
-            <div class="project-card project-card-reverse" data-animate="fade-up">
-                <div class="project-card-inner">
-                    <div class="project-image-wrapper">
-                        <img src="images/project4.png" alt="Cricfantasy Sport Management League" class="project-image">
-                    </div>
                     <div class="project-info">
                         <h3 class="project-name">Cricfantasy Sport Management League</h3>
                         <p class="project-description">
@@ -326,8 +253,10 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-st
                             <span>JavaScript</span>
                             <span>Web Development</span>
                         </div>
-                        <a href="http://127.0.0.1:5501/index.html" target="_blank" class="btn btn-small">View
-                            Project</a>
+                        <a href="http://127.0.0.1:5501/" target="_blank" class="btn btn-small">View Project</a>
+                    </div>
+                    <div class="project-image-wrapper">
+                        <img src="images/project4.png" alt="Cricfantasy Sport Management League" class="project-image">
                     </div>
                 </div>
             </div>
@@ -437,49 +366,65 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-st
                 onclick="document.getElementById('resumeModal').classList.remove('active'); document.body.style.overflow='';">&times;</button>
             <div class="resume-header">
                 <h2>JAGDISH GIRASE</h2>
-                <p>Dhule, India &bull; +91 9881360557 &bull; girasejagdish2@gmail.com</p>
+                <p>Dhule, Maharashtra, India &bull; +91-9881360557 &bull; girasejagdish2@gmail.com</p>
             </div>
             <div class="resume-body">
                 <div class="resume-section">
-                    <h3>About Me</h3>
-                    <p>Highly motivated and enthusiastic individual eager to launch a career in IT. Possesses a strong
-                        aptitude for technology, rapid learning capabilities, and a proactive problem-solving approach.
-                        Committed to acquiring new technical skills and contributing to team success in an entry-level
-                        IT role.</p>
+                    <h3>Professional Summary</h3>
+                    <p>Motivated and enthusiastic BCA graduate seeking an entry-level IT role. Possesses a strong aptitude for technology with hands-on experience in Python, Java, SQL, and web development. Demonstrates rapid learning capabilities and a proactive problem-solving approach. Committed to contributing to team success and continuously acquiring new technical skills.</p>
                 </div>
                 <div class="resume-section">
                     <h3>Education</h3>
                     <div class="resume-edu">
-                        <div class="edu-item"><strong>BCA T.Y</strong><span>Present</span><br><small>S.S.V.P.S College
-                                Dhule, Dhule</small></div>
-                        <div class="edu-item"><strong>BCA S.Y</strong> &mdash; CGPA: 9.21<span>Jul 2024 - Apr
-                                2025</span><br><small>S.S.V.P.S College Dhule, Dhule</small></div>
-                        <div class="edu-item"><strong>BCA F.Y</strong> &mdash; CGPA: 8.98<span>Jul 2023 - Apr
-                                2024</span><br><small>S.S.V.P.S College Dhule, Dhule</small></div>
-                        <div class="edu-item"><strong>12th</strong> &mdash; 70.96%<span>Jul 2022 - Apr
-                                2023</span><br><small>R.D.M.P High School, Dondaicha</small></div>
-                        <div class="edu-item"><strong>10th</strong> &mdash; 78.69%<span>Jul 2020 - Apr
-                                2021</span><br><small>Aanandvan Madhyamik Vidyalaya Songir, Songir</small></div>
+                        <div class="edu-item">
+                            <strong>Bachelor of Computer Applications (BCA)</strong>
+                            <span>2020 &mdash; 2023</span>
+                            <br><small>S.S.V.P. Science College, Dhule &bull; Dhule, Maharashtra</small>
+                            <div style="font-size: 0.85rem; margin-top: 6px; color: var(--text-medium); width: 100%;">
+                                &bull; Final Year (T.Y. BCA): 2022&ndash;2023<br>
+                                &bull; Second Year CGPA: 9.21 | First Year CGPA: 8.98
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Higher Secondary Certificate (12th) &mdash; Science</strong>
+                            <span>2019 &mdash; 2020</span>
+                            <br><small>R.D.M.P. High School, Dondaicha &bull; Maharashtra</small>
+                            <div style="font-size: 0.85rem; margin-top: 4px; color: var(--text-medium); width: 100%;">
+                                &bull; Percentage: 70.96%
+                            </div>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Secondary School Certificate (10th)</strong>
+                            <span>2017 &mdash; 2018</span>
+                            <br><small>Aanandvan Madhyamik Vidyalaya Songir &bull; Songir, Maharashtra</small>
+                            <div style="font-size: 0.85rem; margin-top: 4px; color: var(--text-medium); width: 100%;">
+                                &bull; Percentage: 78.69%
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="resume-section">
-                    <h3>Skills</h3>
-                    <div class="resume-skills">Python &bull; Java &bull; SQL &bull; Web Design &bull; AI Handling &bull;
-                        Project Deployment &bull; Problem Solving &bull; Communication &bull; Adaptability</div>
+                    <h3>Technical Skills</h3>
+                    <div class="resume-skills">
+                        <strong>Programming Languages:</strong> Python, Java, SQL<br>
+                        <strong>Technologies & Tools:</strong> Microsoft Excel, Website Design & Development, Git, GitHub<br>
+                        <strong>Soft Skills:</strong> Problem-Solving, Communication, Adaptability, Teamwork<br>
+                        <strong>Languages:</strong> English, Hindi, Marathi
+                    </div>
                 </div>
                 <div class="resume-section">
                     <h3>Projects</h3>
-                    <p><strong>Cricfantasy Sport Management League</strong><br>A fantasy cricket sports management
-                        platform with team selection, live scoring, and league standings.</p>
+                    <p><strong>CricFantasy Sport Management League</strong> &mdash; <em>Web Application</em> <a href="http://127.0.0.1:5501/" target="_blank" style="color: var(--primary-dark); font-size: 0.85rem; margin-left: 5px;">(http://127.0.0.1:5501/)</a></p>
+                    <ul style="font-size: 0.9rem; color: var(--text-medium); margin-top: 6px; padding-left: 20px; list-style-type: disc;">
+                        <li>Developed a cricket fantasy sports management web application enabling users to create and manage fantasy cricket leagues.</li>
+                        <li>Implemented features for team selection, player statistics tracking, and live score management.</li>
+                        <li>Built using web technologies with a focus on interactive UI and real-time data handling.</li>
+                        <li>Hosted locally and tested end-to-end functionality across multiple user scenarios.</li>
+                    </ul>
                 </div>
                 <div class="resume-section">
-                    <h3>Languages</h3>
-                    <p>English &bull; Hindi &bull; Marathi</p>
-                </div>
-                <div class="resume-section">
-                    <h3>Hobbies</h3>
-                    <p>Traveling &bull; Video Editing &bull; Coding &bull; Web Development &bull; Gaming &bull;
-                        Astronomy</p>
+                    <h3>Hobbies & Interests</h3>
+                    <p>Traveling &bull; Video Editing &bull; Coding & Web Development &bull; Gaming &bull; Astronomy</p>
                 </div>
             </div>
         </div>
